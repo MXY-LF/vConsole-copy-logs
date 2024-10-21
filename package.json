@@ -1,5 +1,5 @@
 {
-  "name": "@webank/vconsole-export",
+  "name": "vconsole-export",
   "version": "4.0.3",
   "description": "A lightweight, extendable front-end developer tool for mobile web page.",
   "homepage": "https://github.com/Tencent/vConsole",
@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
-    "@sveltejs/kit": "^2.5.18",
     "circular-json": "^0.5.9",
     "copy-text-to-clipboard": "^3.0.1",
     "copy-to-clipboard": "^3.3.3",
