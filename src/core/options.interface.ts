@@ -1,0 +1,51 @@
+/*
+ * @Descripttion:
+ * @Author: xiangyumeng@webank.com
+ * @LastEditTime: 2024-10-18 14:29:23
+ */
+export interface VConsoleLogOptions {
+  maxLogNumber?: number;
+  showTimestamps?: boolean;
+  exportMethod?: string[];
+}
+
+export interface VConsoleNetworkOptions {
+  maxNetworkNumber?: number;
+  ignoreUrlRegExp?: RegExp;
+  exportUrlRegExp?: RegExp;
+}
+
+export type VConsoleAvailableStorage =
+  | "cookies"
+  | "localStorage"
+  | "sessionStorage"
+  | "wxStorage";
+export interface VConsoleStorageOptions {
+  defaultStorages?: VConsoleAvailableStorage[];
+}
+
+export interface VConsoleOptions {
+  target?: string | HTMLElement;
+  defaultPlugins?: ("system" | "network" | "element" | "storage")[];
+  theme?: "" | "dark" | "light";
+  disableLogScrolling?: boolean;
+  pluginOrder?: string[];
+  onReady?: () => void;
+
+  log?: VConsoleLogOptions;
+  network?: VConsoleNetworkOptions;
+  storage?: VConsoleStorageOptions;
+
+  /**
+   * @deprecated Since v3.12.0, use `log.maxLogNumber`.
+   */
+  maxLogNumber?: number;
+  /**
+   * @deprecated Since v3.12.0, use `network.maxNetworkNumber`.
+   */
+  maxNetworkNumber?: number;
+  /**
+   * @deprecated Since v3.12.0.
+   */
+  onClearLog?: () => void;
+}
