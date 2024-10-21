@@ -3,7 +3,7 @@ import LogComp from "./log.svelte";
 import { VConsoleLogModel } from "./log.model";
 import { VConsoleLogExporter } from "./log.exporter";
 import type { IConsoleLogMethod } from "./log.model";
-import copy from "copy-to-clipboard";
+import copy from 'copy-text-to-clipboard';
 import * as tool from "../lib/tool";
 const safeStringify = require("fast-safe-stringify");
 const MAX_LOG_NUMBER = 1000;

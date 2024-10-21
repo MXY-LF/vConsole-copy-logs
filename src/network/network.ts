@@ -8,7 +8,7 @@ import NetworkComp from "./network.svelte";
 import { VConsoleNetworkModel } from "./network.model";
 import { VConsoleNetworkExporter } from "./network.exporter";
 import { JSONStringify } from "src/lib/tool";
-import copy from "copy-to-clipboard";
+import copy from 'copy-text-to-clipboard';
 const safeStringify = require("fast-safe-stringify");
 const MAX_NETWORK_NUMBER = 1000;
 
